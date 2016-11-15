@@ -7,17 +7,55 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="610" Width="545">
 
-    <StackPanel>
-        <TextBlock Text="Votre livre" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBlock Text="Titre:" HorizontalAlignment="left" VerticalAlignment="Center" Margin="311,0,138,-65"/>
-        <TextBlock Text="Auteur" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="311,0,138,-91" RenderTransformOrigin="1.75,5.25"/>
-        <TextBlock Text="Saga :" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="311,0,0,-120" RenderTransformOrigin="1.75,5.25"/>
-        <Rectangle Fill="#FFB0B0B0"
-           Width="58"
-           Height="65"
-           Stroke="Black" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.467,2.32" Margin="238,24,241,0" />
-        <TextBlock Text="État :" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="311,-25,0,0"/>
+    <StackPanel> 
+        <StackPanel>
+            <TextBlock Text="Votre livre" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="242,7,241,-11" RenderTransformOrigin="0.889,1.25"/>
+            <TextBlock Text="Titre:" HorizontalAlignment="left" VerticalAlignment="Center" Margin="311,0,138,-65"/>
+            <TextBlock Text="Auteur" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="311,0,138,-91" RenderTransformOrigin="1.75,5.25"/>
+            <TextBlock Text="Saga :" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="311,0,0,-120" RenderTransformOrigin="1.75,5.25"/>
+            <Rectangle Fill="#FFB0B0B0"
+               Width="58"
+               Height="65"
+               Stroke="Black" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.467,2.32" Margin="238,24,241,0" />
+            <TextBlock Text="État :" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="311,-25,0,0"/>
+        </StackPanel>
+      
+        <StackPanel Margin="50,30,50,0">            <WrapPanel>
+                <StackPanel Width="300" HorizontalAlignment="Left">
+                    
+                    <WrapPanel Margin="0,0,0,2">
+                        <TextBlock Width="100" Text="Nom : "/>
+                        <TextBox Name="Nom" Width="100"/>
+                    </WrapPanel>
+                    <WrapPanel Margin="0,0,0,2">
+                        <TextBlock Width="100" Text="Prénom : "/>
+                        <TextBox Name="Prenom" Width="100"/>
+                    </WrapPanel>
+                    <WrapPanel  Margin="0,0,0,2">
+                        <TextBlock Text="Mail : " Width="100"/>
+                        <TextBox Name="Mail" Width="100"/>
+                    </WrapPanel>
+                    <WrapPanel HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,0,2">
+                        <TextBlock Text="N°de tel : " Width="100"/>
+                        <TextBox Name="Telephone" Width="100"/>
+                    </WrapPanel>
+                    <WrapPanel HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,0,2">
+                        <TextBlock Text="Adresse postale: "/>
+                        <TextBox Name="AdressePostale" Width="161" Height="85" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    </WrapPanel>
+            
+                </StackPanel>
+                <StackPanel>
+                    <ComboBox Width="100" SelectionChanged="ComboBox_SelectionChanged" BorderThickness="0,0,1,0" Height="21">
+                        <ComboBoxItem Content="ListBox Item #1"/>
+                        <ComboBoxItem Content="ListBox Item #2"/>
+                        <ComboBoxItem Content="ListBox Item #3"/>
+                    </ComboBox>
+                </StackPanel>
+            </WrapPanel>
+        </StackPanel>
     </StackPanel>
-    
- 
+
+
+
 </Window>
