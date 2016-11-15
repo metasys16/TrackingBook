@@ -1,0 +1,114 @@
+﻿<Window x:Class="TrackingBook.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TrackingBook"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="610" Width="545">
+
+    <StackPanel>
+        <StackPanel Margin="50,-5,50,10">
+            <TextBlock  Text="Votre livre" HorizontalAlignment="Center" FontSize="20" Margin="0,10,0,0"/>
+            <WrapPanel HorizontalAlignment="Center" Margin="0,5,0,0">
+                <StackPanel>
+                    <Rectangle Fill="#FFB0B0B0"
+               Width="72"
+               Height="86"
+               Stroke="Black"/>
+                </StackPanel>
+             <StackPanel Width="100" Margin="10,0,0,0">
+                <TextBlock Text="Titre:"/>
+                <TextBlock Text="Auteur"/>
+                <TextBlock Text="Saga :"/>
+                <TextBlock Text="État :"/>
+            </StackPanel>
+               
+            </WrapPanel>    
+               
+        </StackPanel>
+
+        <StackPanel Panel.ZIndex="1"  Margin="100,0,0,0">
+            <TextBlock Width="70 " HorizontalAlignment="Left" VerticalAlignment="Center" Background="White" TextAlignment="Center" FontSize="14" >A qui ?</TextBlock>
+        </StackPanel>
+        <StackPanel Margin="50,-5,50,10">            <Border BorderBrush="#FF1D0101" BorderThickness="1" >                <WrapPanel>
+                    <StackPanel Width="300" HorizontalAlignment="Left" Margin="20,10,0,10">
+
+                        <WrapPanel Margin="0,0,0,2">
+                            <TextBlock Width="100" Text="Nom : "/>
+                            <TextBox Name="Nom" Width="100"/>
+                        </WrapPanel>
+                        <WrapPanel Margin="0,0,0,2">
+                            <TextBlock Width="100" Text="Prénom : "/>
+                            <TextBox Name="Prenom" Width="100"/>
+                        </WrapPanel>
+                        <WrapPanel  Margin="0,0,0,2">
+                            <TextBlock Text="Mail : " Width="100"/>
+                            <TextBox Name="Mail" Width="100"/>
+                        </WrapPanel>
+                        <WrapPanel HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,0,2">
+                            <TextBlock Text="N°de tel : " Width="100"/>
+                            <TextBox Name="Telephone" Width="100"/>
+                        </WrapPanel>
+                        <WrapPanel HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,0,2">
+                            <TextBlock Text="Adresse postale: "/>
+                            <TextBox Name="AdressePostale" Width="161" Height="85" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                        </WrapPanel>
+
+                    </StackPanel>
+                    <StackPanel Margin="0,10,0,0">
+                        <ComboBox Width="100" SelectionChanged="ComboBox_SelectionChanged" BorderThickness="0,0,1,0" Height="21">
+                            <ComboBoxItem Content="ListBox Item #1"/>
+                            <ComboBoxItem Content="ListBox Item #2"/>
+                            <ComboBoxItem Content="ListBox Item #3"/>
+                        </ComboBox>
+                    </StackPanel>
+                </WrapPanel>
+            </Border>
+        </StackPanel>
+
+        <StackPanel Panel.ZIndex="1"  Margin="100,0,0,0">
+            <TextBlock Width="150 " HorizontalAlignment="Left" VerticalAlignment="Center" Background="White" TextAlignment="Center" FontSize="14" >Combien de temps ?</TextBlock>
+        </StackPanel>
+        <StackPanel  Margin="50,-5,50,10">
+            <Border BorderBrush="Black" BorderThickness="1">
+                <WrapPanel Margin="20,10,0,10">
+                    <StackPanel Width="210">
+                        <WrapPanel  Margin="0,0,0,2">
+                            <TextBlock Text="Durée du prêt : " Width="100"/>
+                            <TextBox Name="DureeDuPret" Width="100"/>
+                        </WrapPanel>
+
+                    </StackPanel>
+                    <StackPanel>
+                        <ComboBox Width="100" SelectionChanged="ComboBox_SelectionChanged" BorderThickness="0,0,1,0" Height="21">
+                            <ComboBoxItem Content="semaine"/>
+                            <ComboBoxItem Content="mois"/>
+                            <ComboBoxItem Content="ListBox Item #3"/>
+                        </ComboBox>
+                    </StackPanel>
+                </WrapPanel>
+            </Border>
+        </StackPanel>
+
+        <StackPanel Margin="50,30,50,10">
+            <WrapPanel HorizontalAlignment="Center">
+                <StackPanel>
+                    <Button Name="BoutonAnnuler"
+                       Click="BoutonAnnuler_Click" Margin="0,0,10,0">Annuler
+                    </Button>
+                </StackPanel>
+                <StackPanel>
+                    <Button Name="BoutonValider"
+                       Click="BoutonValider_Click">Valider
+                    </Button>
+                </StackPanel>
+            </WrapPanel>
+
+        </StackPanel>
+
+    </StackPanel>
+
+
+
+</Window>
