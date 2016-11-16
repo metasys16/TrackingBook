@@ -31,7 +31,9 @@
         <StackPanel Panel.ZIndex="1"  Margin="100,0,0,0">
             <TextBlock Width="70 " HorizontalAlignment="Left" VerticalAlignment="Center" Background="White" TextAlignment="Center" FontSize="14" >A qui ?</TextBlock>
         </StackPanel>
-        <StackPanel Margin="50,-5,50,10">            <Border BorderBrush="#FF1D0101" BorderThickness="1" >                <WrapPanel>
+        <StackPanel Margin="50,-5,50,10">
+            <Border BorderBrush="#FF1D0101" BorderThickness="1" >
+                <WrapPanel>
                     <StackPanel Width="300" HorizontalAlignment="Left" Margin="20,10,0,10">
 
                         <WrapPanel Margin="0,0,0,2">
