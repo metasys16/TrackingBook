@@ -55,6 +55,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Exemplaire.cs" />
+    <Compile Include="MoyenContact.cs" />
     <Compile Include="retourLivre.xaml.cs">
       <DependentUpon>retourLivre.xaml</DependentUpon>
     </Compile>
