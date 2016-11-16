@@ -17,9 +17,9 @@ namespace TrackingBook
     /// <summary>
     /// Logique d'interaction pour Window1.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class EnteteLivre : Page
     {
-        public Window1()
+        public EnteteLivre()
         {
             InitializeComponent();
         }

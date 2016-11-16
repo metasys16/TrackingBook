@@ -18,9 +18,9 @@ namespace TrackingBook
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class PretLivre : Page
     {
-        public MainWindow()
+        public PretLivre()
         {
             InitializeComponent();
         }
