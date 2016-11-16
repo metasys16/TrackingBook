@@ -24,7 +24,17 @@
                 <TextBlock Text="Explication" Height="180" Width="628" VerticalAlignment="Top"/>
                 <StackPanel Orientation="Horizontal" Margin="25">
                     <TextBox x:Name="ISBN" Height="27" Width="468" VerticalAlignment="Top" Text="n° ISBN"/>
-                    <Button Content="?" Width="27"/> <!--tooltip-->
+                    <Button Content="?" Width="27">
+                        <Button.ToolTip>
+                            <ToolTip>
+                                <StackPanel>
+                                    <TextBlock FontWeight="Bold">ISBN</TextBlock>
+                                    <TextBlock>Numéro d'identifient internationnal unique à chaque livre</TextBlock>
+                                </StackPanel>
+                            </ToolTip>
+                        </Button.ToolTip>
+                    </Button>
+                    <!--tooltip-->
                 </StackPanel>
             </StackPanel>
 
@@ -33,17 +43,44 @@
             <StackPanel  Margin="10" Width="440">
                 <StackPanel Orientation="Horizontal" Margin="5">
                     <TextBox x:Name="titre" Height="27" Width="306" Text="Titre du Livre"/>
-                    <Button Content="?" Width="27"/>
+                    <Button Content="?" Width="27">
+                        <Button.ToolTip>
+                            <ToolTip>
+                                <StackPanel>
+                                    <TextBlock FontWeight="Bold">Titre</TextBlock>
+                                    <TextBlock>Nom du livre</TextBlock>
+                                </StackPanel>
+                            </ToolTip>
+                        </Button.ToolTip>
+                    </Button>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="5">
                     <TextBox x:Name="editeur" Height="27" Width="306" Text="Nom de l'éditeur"/>
-                    <Button Content="?" Width="27"/>
+                    <Button Content="?" Width="27">
+                        <Button.ToolTip>
+                            <ToolTip>
+                                <StackPanel>
+                                    <TextBlock FontWeight="Bold">Editeur</TextBlock>
+                                    <TextBlock>Personne qui à publier le livre</TextBlock>
+                                </StackPanel>
+                            </ToolTip>
+                        </Button.ToolTip>
+                    </Button>
                 </StackPanel>
             </StackPanel>
             <StackPanel  Margin="10" HorizontalAlignment="Right">
                 <StackPanel Orientation="Horizontal" Margin="5">
                     <TextBox x:Name="auteur" Height="27" Width="306" Text="Nom de l'auteur"/>
-                    <Button Content="?" Width="27"/>
+                    <Button Content="?" Width="27">
+                        <Button.ToolTip>
+                            <ToolTip>
+                                <StackPanel>
+                                    <TextBlock FontWeight="Bold">Auteur</TextBlock>
+                                    <TextBlock>Personne qui a écrit le livre</TextBlock>
+                                </StackPanel>
+                            </ToolTip>
+                        </Button.ToolTip>
+                    </Button>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="5">
                     <TextBox x:Name="sage" Height="27" Width="306" Text="Titre de la saga"/>
@@ -53,7 +90,16 @@
         </StackPanel>
         <StackPanel Orientation="Horizontal" Margin="20,0,20,0">
             <TextBox x:Name="commentaire" Height="141" Width="762" Text="Commentaire"/>
-            <Button Content="?" Height="27" Width="27" VerticalAlignment="Top"/>
+            <Button Content="?" Height="27" Width="27" VerticalAlignment="Top">
+                 <Button.ToolTip>
+                    <ToolTip>
+                        <StackPanel>
+                            <TextBlock FontWeight="Bold">Commentaire</TextBlock>
+                            <TextBlock>Résumer ou impression sur le livre</TextBlock>
+                        </StackPanel>
+                    </ToolTip>
+                </Button.ToolTip>
+            </Button>
         </StackPanel>
         <StackPanel Orientation="Horizontal" Margin="20,20,20,20" HorizontalAlignment="Right">
             <Button Content="Confirmer" Height="30" Width="68"/>
