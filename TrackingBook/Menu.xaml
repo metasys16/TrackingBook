@@ -1,0 +1,61 @@
+﻿<Page x:Class="TrackingBook.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TrackingBook"
+      mc:Ignorable="d" 
+      d:DesignHeight="50" d:DesignWidth="1366"
+      Title="Menu" Background="Gray">
+
+    <StackPanel Orientation="Horizontal">
+        <WrapPanel Width="500" Margin="15,0">
+            <Button Name="btnList" Width="50" Height="50" Margin="5,0">
+                <Button.Background>
+                    <ImageBrush ImageSource="Resources/List.ico"/>
+                </Button.Background>
+            </Button>
+            <Button Name="btnAjout" Width="50" Height="50" Margin="5,0">
+                <Button.Background>
+                    <ImageBrush ImageSource="Resources/Add.png"/>
+                </Button.Background>
+            </Button>
+            <Button Name="btnPreter" Width="50" Height="50" Margin="5,0">
+                <Button.Background>
+                    <ImageBrush ImageSource="Resources/Pret.png"/>
+                </Button.Background>
+            </Button>
+            <Button Name="btnRetour" Width="50" Height="50" Margin="5,0">
+                <Button.Background>
+                    <ImageBrush ImageSource="Resources/Retour.png"/>
+                </Button.Background>
+            </Button>
+        </WrapPanel>
+        <WrapPanel Width="300" Margin="15,0">
+            <Button Name="btnTriCroissant" Width="50" Height="50" Margin="5,0">
+                <Button.Background>
+                    <ImageBrush ImageSource="Resources/TriCroissant.png"/>
+                </Button.Background>
+            </Button>
+            <Button Name="btnTriDeCroissant" Width="50" Height="50" Margin="5,0">
+                <Button.Background>
+                    <ImageBrush ImageSource="Resources/TriDeCroissant.png"/>
+                </Button.Background>
+            </Button>
+        </WrapPanel>
+        <WrapPanel Width="500" Margin="15,0">
+            <TextBlock FontWeight="Bold" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Center">Trier Par :</TextBlock>
+            <Button Name="btnTri"  Width="30" Height="30" Margin="5,0">
+                <Button.Background>
+                    <ImageBrush ImageSource="Resources/Trier.png"/>
+                </Button.Background>
+            </Button>
+            <TextBox Name="textSearch" Height="30" Width="150" Margin="30,0,0,0">Rechercher</TextBox>
+            <Button Name="btnSearch" Width="50" Height="50" Margin="5,0">
+                <Button.Background>
+                    <ImageBrush ImageSource="Resources/Find.ico"/>
+                </Button.Background>
+            </Button>
+        </WrapPanel>
+    </StackPanel>
+</Page>
