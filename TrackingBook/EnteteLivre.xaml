@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:TrackingBook"
         mc:Ignorable="d"
         Background="White"
-        Title="Window1" Height="50" Width="1366" Opacity="0.975">
+        Title="Window1" Height="60" Width="1366" Opacity="0.975">
     <StackPanel>
         <Border BorderBrush="Black" BorderThickness="1,1,1,0">
             <StackPanel Margin="10,0,0,0">
