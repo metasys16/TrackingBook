@@ -11,13 +11,13 @@
 
     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" >
         <Button>
-            <Image Source="TrackingBook/Resources/Previous.ico"/>
+            <Image Source="Resources/Previous.ico"/>
         </Button>
         <TextBox Name="pageActuelle" Text="1" FontSize="16"></TextBox>
         <TextBlock FontSize="16">/</TextBlock>
         <TextBlock Name="NbTotalPage" Text="10" FontSize="16"></TextBlock>
         <Button>
-            <Image Source="TrackingBook/Resources/Next.ico"/>
+            <Image Source="Resources/Next.ico"/>
         </Button>
     </StackPanel>
 </Page>

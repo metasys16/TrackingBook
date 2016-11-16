@@ -8,27 +8,31 @@
         Title="TrackingBook" Height="768" Width="1366">
     <DockPanel LastChildFill="True">
         <StackPanel DockPanel.Dock="Top">
-            <Grid Grid.Column="1" Grid.Row="0">
-                <Frame Source="EnteteLivre.xaml"/>
-            </Grid>
-            <Grid Grid.Column="1" Grid.Row="0">
-                <Frame Source="Menu.xaml"/>
-            </Grid>
+            <Frame Source="EnteteLivre.xaml"/>
+            <Frame Source="Menu.xaml"/>
         </StackPanel>
+
+        <StackPanel DockPanel.Dock="Bottom">
+            <Frame Source="Footer.xaml"/>
+        </StackPanel>
+        
+        <StackPanel>
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="0.3*"></ColumnDefinition>
                 <ColumnDefinition Width="0.7*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
 
-            <Grid Grid.Column="0">
+            <Grid Grid.Column="0" Height="640">
                 <Frame Source="Detail.xaml" Grid.ColumnSpan="2"/>
             </Grid>
 
-            <Grid Grid.Column="1" Grid.Row="0">
+            <Grid Grid.Column="1" Grid.Row="0" Height="640">
                 <Frame Source="Liste.xaml"/>
             </Grid>
         </Grid>
+        </StackPanel>
+
      
     </DockPanel>
 </Window>

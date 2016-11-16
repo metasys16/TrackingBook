@@ -11,50 +11,34 @@
     <StackPanel Orientation="Horizontal">
         <WrapPanel Width="500" Margin="15,0">
             <Button Name="btnList" Width="50" Height="50" Margin="5,0">
-                <Button.Background>
-                    <ImageBrush ImageSource="Resources/List.ico"/>
-                </Button.Background>
+                <Image Source="Resources/List.ico"/>
             </Button>
             <Button Name="btnAjout" Width="50" Height="50" Margin="5,0">
-                <Button.Background>
-                    <ImageBrush ImageSource="Resources/Add.png"/>
-                </Button.Background>
+                <Image Source="Resources/Add.png"/>
             </Button>
             <Button Name="btnPreter" Width="50" Height="50" Margin="5,0">
-                <Button.Background>
-                    <ImageBrush ImageSource="Resources/Pret.png"/>
-                </Button.Background>
+                <Image Source="Resources/Pret.png"/>
             </Button>
             <Button Name="btnRetour" Width="50" Height="50" Margin="5,0">
-                <Button.Background>
-                    <ImageBrush ImageSource="Resources/Retour.png"/>
-                </Button.Background>
+                <Image Source="Resources/Retour.png"/>
             </Button>
         </WrapPanel>
         <WrapPanel Width="300" Margin="15,0">
             <Button Name="btnTriCroissant" Width="50" Height="50" Margin="5,0">
-                <Button.Background>
-                    <ImageBrush ImageSource="Resources/TriCroissant.png"/>
-                </Button.Background>
+                <Image Source="Resources/TriCroissant.png"/>
             </Button>
             <Button Name="btnTriDeCroissant" Width="50" Height="50" Margin="5,0">
-                <Button.Background>
-                    <ImageBrush ImageSource="Resources/TriDeCroissant.png"/>
-                </Button.Background>
+                <Image Source="Resources/TriDeCroissant.png"/>
             </Button>
         </WrapPanel>
         <WrapPanel Width="500" Margin="15,0">
             <TextBlock FontWeight="Bold" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Center">Trier Par :</TextBlock>
             <Button Name="btnTri"  Width="30" Height="30" Margin="5,0">
-                <Button.Background>
-                    <ImageBrush ImageSource="Resources/Trier.png"/>
-                </Button.Background>
+                <Image Source="Resources/Trier.png"/>
             </Button>
             <TextBox Name="textSearch" Height="30" Width="150" Margin="30,0,0,0">Rechercher</TextBox>
             <Button Name="btnSearch" Width="50" Height="50" Margin="5,0">
-                <Button.Background>
-                    <ImageBrush ImageSource="Resources/Find.ico"/>
-                </Button.Background>
+                <Image Source="Resources/Find.ico"/>
             </Button>
         </WrapPanel>
     </StackPanel>

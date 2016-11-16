@@ -17,9 +17,9 @@ namespace TrackingBook
     /// <summary>
     /// Logique d'interaction pour Window2.xaml
     /// </summary>
-    public partial class Window2 : Window
+    public partial class PopUp : Window
     {
-        public Window2()
+        public PopUp()
         {
             InitializeComponent();
         }
