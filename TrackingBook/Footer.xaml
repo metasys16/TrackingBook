@@ -1,0 +1,23 @@
+﻿<Page x:Class="TrackingBook.Footer"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TrackingBook"
+      mc:Ignorable="d" 
+      d:DesignHeight="30" d:DesignWidth="1366"
+      Title="Footer"
+      Background="White">
+
+    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" >
+        <Button>
+            <Image Source="TrackingBook/Resources/Previous.ico"/>
+        </Button>
+        <TextBox Name="pageActuelle" Text="1" FontSize="16"></TextBox>
+        <TextBlock FontSize="16">/</TextBlock>
+        <TextBlock Name="NbTotalPage" Text="10" FontSize="16"></TextBlock>
+        <Button>
+            <Image Source="TrackingBook/Resources/Next.ico"/>
+        </Button>
+    </StackPanel>
+</Page>
