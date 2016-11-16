@@ -55,31 +55,56 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Exemplaire.cs" />
+    <Compile Include="MoyenContact.cs" />
+    <Compile Include="retourLivre.xaml.cs">
+      <DependentUpon>retourLivre.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EnteteLivre.xaml.cs">
+      <DependentUpon>EnteteLivre.xaml</DependentUpon>
+    </Compile>
+    <Page Include="ajoutLivre.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Detail.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="PrêtLivre.xaml">
-
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Liste.xaml">
-
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="ajoutLivre.xaml.cs">
+      <DependentUpon>ajoutLivre.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-
+    <Compile Include="Detail.xaml.cs">
+      <DependentUpon>Detail.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PrêtLivre.xaml.cs">
       <DependentUpon>PrêtLivre.xaml</DependentUpon>
-
       <SubType>Code</SubType>
     </Compile>
-
     <Compile Include="Liste.xaml.cs">
       <DependentUpon>Liste.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="retourLivre.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="EnteteLivre.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

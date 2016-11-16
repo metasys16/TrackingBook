@@ -10,19 +10,23 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace TrackingBook
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Logique d'interaction pour Window2.xaml
     /// </summary>
-    public partial class AjoutLivre : Page
+    public partial class Window2 : Window
     {
-        public AjoutLivre()
+        public Window2()
         {
             InitializeComponent();
+        }
+
+        private void btnMessageBoxWithTitle_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

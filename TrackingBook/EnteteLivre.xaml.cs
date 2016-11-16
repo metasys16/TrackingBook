@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace TrackingBook
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Logique d'interaction pour Window1.xaml
     /// </summary>
-    public partial class AjoutLivre : Page
+    public partial class EnteteLivre : Page
     {
-        public AjoutLivre()
+        public EnteteLivre()
         {
             InitializeComponent();
         }
