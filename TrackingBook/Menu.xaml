@@ -25,7 +25,7 @@
         </WrapPanel>
         <WrapPanel Width="225" Margin="15,0">
             <Button Name="btnTriCroissant" Width="50" Height="50" Margin="5,0">
-                <Image Source="Resources/TriCroissant.png"/>
+                <Image Width="20" Height="20" Source="Resources/TriCroissant.png"/>
             </Button>
             <Button Name="btnTriDeCroissant" Width="50" Height="50" Margin="5,0">
                 <Image Source="Resources/TriDeCroissant.png"/>

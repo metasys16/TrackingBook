@@ -175,6 +175,21 @@
   <ItemGroup>
     <None Include="Resources\List.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Add.png" />
+    <Resource Include="Resources\Bullets_11690.ico" />
+    <Resource Include="Resources\Delete.ico" />
+    <Resource Include="Resources\Icon1.ico" />
+    <Resource Include="Resources\Icon2.ico" />
+    <Resource Include="Resources\Next.ico" />
+    <Resource Include="Resources\Pret.png" />
+    <Resource Include="Resources\Previous.ico" />
+    <Resource Include="Resources\Retour.png" />
+    <Resource Include="Resources\Save.ico" />
+    <Resource Include="Resources\TriCroissant.png" />
+    <Resource Include="Resources\TriDecroissant.png" />
+    <Resource Include="Resources\Trier.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
