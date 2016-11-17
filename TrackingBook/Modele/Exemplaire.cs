@@ -10,9 +10,9 @@ namespace TrackingBook.Modele
     {
         private Oeuvre oeuvre;
         private string photo;
-        private DateTime dateAjout;
+        public DateTime dateAjout;
         private Char etat;
-        private bool disponibilite;
+        public bool disponibilite;
 
         public Oeuvre Oeuvre
         {
@@ -30,7 +30,7 @@ namespace TrackingBook.Modele
             get { return dateAjout; }
             set { dateAjout = value; }
         }
-    
+
 
         public Char Etat
         {
@@ -39,11 +39,17 @@ namespace TrackingBook.Modele
         }
 
         
-
+  
         public bool Disponibilite
         {
             get { return disponibilite; }
-            set { disponibilite = value; }
+
+            set
+            {
+
+                disponibilite = value;
+
+            }
         }
 
 

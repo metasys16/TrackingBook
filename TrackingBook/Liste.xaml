@@ -14,7 +14,7 @@
                     <GridViewColumn Header="Auteur" Width="250" DisplayMemberBinding="{Binding Auteur}" />
                     <GridViewColumn Header="Genre" Width="155" DisplayMemberBinding="{Binding Genre}" />
                     <GridViewColumn Header="Date d'ajout" Width="155" DisplayMemberBinding="{Binding DateAjout}" />
-                    <GridViewColumn Header="Disponibilité" Width="90" DisplayMemberBinding="{Binding Disponibilité}" />
+                    <GridViewColumn Header="Disponibilité" Width="90" DisplayMemberBinding="{Binding Disponibilite}" />
                 </GridView>
             </ListView.View>
         </ListView>

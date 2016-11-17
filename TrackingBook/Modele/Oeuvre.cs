@@ -8,8 +8,8 @@ namespace TrackingBook.Modele
 {
     public class Oeuvre
     {
-        private List<Auteur> auteurs;
-        private List<Genre> genres;
+        private List<Auteur> auteurs = new List<Auteur>();
+        private List<Genre> genres = new List<Genre>();
         private String titre;
         private String resume;
         private int isbn10;

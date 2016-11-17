@@ -25,26 +25,56 @@ namespace TrackingBook
         {
             InitializeComponent();
 
+            // test
+            Exemplaire ex = new Exemplaire();
+            ex.Disponibilite = true;
+            ex.DateAjout = new DateTime(2015, 6, 5);
+
+
+            Oeuvre oeuvre = new Oeuvre();
+            oeuvre.Titre = "L'étranger";
+            ex.Oeuvre = oeuvre;
+
+            Auteur auteur = new Auteur();
+            auteur.Nom = "Camus";
+            auteur.PrenomAuteur = "Albert";
+            oeuvre.Auteurs.Add(auteur);
+
+      
+            Genre genre1 = new Genre();
+            genre1.Nom = "Meutre";
+            oeuvre.Genres.Add(genre1);
+
+
+            Genre genre2= new Genre();
+            genre2.Nom = "Roman";
+            oeuvre.Genres.Add(genre2);
+
+
+
+
+            // fin test
+
             List<Livre> items = new List<Livre>();
-            items.Add(new Livre() { Titre = "L'étranger", Auteur = "Camus", Genre = "Roman", DateAjout = "2016", Disponibilite = "Dispo" });
+            items.Add(new Livre(ex));
             listeLivres.ItemsSource = items;
 
         }
 
         private class Livre
         {
-            public Livre() { }
+           /// public Livre() { }
 
             public Livre(Exemplaire exemplaire) {
                 // Récupérer le titre de l'exmplaire il y un titre unique pour une oeuvre mais plusieurs exemplaires peuvent exister pour une oeuvre
                 this.Titre = exemplaire.Oeuvre.Titre;
 
-                // Il peut y avoir un ou plusieurs auteurs, il faut récuperer ces auteurs via une liste
+               // Il peut y avoir un ou plusieurs auteurs, il faut récuperer ces auteurs via une liste
                 List<Auteur> listeauteurs = exemplaire.Oeuvre.Auteurs;
                 StringBuilder sb = new StringBuilder();
                 foreach (Auteur auteur in listeauteurs)
                 {
-                    sb.Append(auteur.PrenomAuteur).Append(" ").Append(auteur.Nom);
+                    sb.Append(auteur.PrenomAuteur).Append("").Append(auteur.Nom);
                 }
                 this.Auteur = sb.ToString();
 
@@ -54,9 +84,26 @@ namespace TrackingBook
                 StringBuilder bulder = new StringBuilder();
                 foreach (Genre genre in listegenres)
                 {
-                    bulder.Append(genre.Nom);
+                    bulder.Append(genre.Nom).Append(" ");
                 }
-                this.Genre = sb.ToString();
+                this.Genre = bulder.ToString();
+
+
+
+                // Récupérer la disponibiltié et afficher le message correspondant
+                if (exemplaire.disponibilite)
+                {
+                    Disponibilite = "Disponible";
+                }
+                else
+                {
+
+                    Disponibilite = "Non disponible";
+                }
+
+                //Récupérer la date et la convertir en chaine de caractère
+
+                this.DateAjout = exemplaire.dateAjout.ToString("d");
             }
             public string Titre { get; set; }
 
