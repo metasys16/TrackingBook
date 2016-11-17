@@ -57,27 +57,27 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Auteur.cs" />
-    <Compile Include="Commentaire.cs" />
-    <Compile Include="Editeur.cs" />
-    <Compile Include="Exemplaire.cs" />
     <Compile Include="Footer.xaml.cs">
       <DependentUpon>Footer.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Genre.cs" />
-    <Compile Include="Lecteur.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Menu.xaml.cs">
       <DependentUpon>Menu.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MoyenContact.cs" />
-    <Compile Include="Oeuvre.cs" />
+    <Compile Include="Modele\Auteur.cs" />
+    <Compile Include="Modele\Commentaire.cs" />
+    <Compile Include="Modele\Editeur.cs" />
+    <Compile Include="Modele\Exemplaire.cs" />
+    <Compile Include="Modele\Genre.cs" />
+    <Compile Include="Modele\Lecteur.cs" />
+    <Compile Include="Modele\MoyenContact.cs" />
+    <Compile Include="Modele\Oeuvre.cs" />
+    <Compile Include="Modele\Pret.cs" />
     <Compile Include="PopUp.xaml.cs">
       <DependentUpon>PopUp.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pret.cs" />
     <Compile Include="PretLivre.xaml.cs">
       <DependentUpon>PretLivre.xaml</DependentUpon>
     </Compile>
