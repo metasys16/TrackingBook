@@ -9,6 +9,7 @@ namespace TrackingBook.Modele
     public class Exemplaire
     {
         private Oeuvre oeuvre;
+        private Editeur editeur;
         private string photo;
         public DateTime dateAjout;
         private Char etat;
@@ -18,6 +19,11 @@ namespace TrackingBook.Modele
         {
             get { return oeuvre; }
             set { oeuvre = value; }
+        }
+        public Editeur Editeur
+        {
+            get { return editeur; }
+            set { editeur = value; }
         }
         public string Photo
         {
@@ -51,6 +57,7 @@ namespace TrackingBook.Modele
 
             }
         }
+
 
 
     }

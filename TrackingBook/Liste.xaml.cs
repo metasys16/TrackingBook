@@ -30,6 +30,11 @@ namespace TrackingBook
             ex.Disponibilite = true;
             ex.DateAjout = new DateTime(2015, 6, 5);
 
+            Editeur editeur = new Editeur();
+            editeur.Nom = "Gallimard";
+            ex.Editeur = editeur;
+       
+          
 
             Oeuvre oeuvre = new Oeuvre();
             oeuvre.Titre = "L'étranger";
@@ -104,6 +109,10 @@ namespace TrackingBook
                 //Récupérer la date et la convertir en chaine de caractère
 
                 this.DateAjout = exemplaire.dateAjout.ToString("d");
+
+
+                // Récupérer l'éditeur
+                this.Editeur = exemplaire.Editeur.Nom;
             }
             public string Titre { get; set; }
 
@@ -114,6 +123,8 @@ namespace TrackingBook
             public string DateAjout { get; set; }
 
             public string Disponibilite { get; set; }
+
+            public string Editeur { get; set; }
 
         }
         private void listeLivres_SelectionChanged(object sender, SelectionChangedEventArgs e)

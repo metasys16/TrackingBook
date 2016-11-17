@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TrackingBook.Modele
 {
-    class Editeur
+   public class Editeur
     {
 
         private String nom;

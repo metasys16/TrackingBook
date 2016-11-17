@@ -10,11 +10,13 @@
         <ListView Margin="10" Name="listeLivres">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Titre" Width="270" DisplayMemberBinding="{Binding Titre}" />
-                    <GridViewColumn Header="Auteur" Width="250" DisplayMemberBinding="{Binding Auteur}" />
+                    <GridViewColumn Header="Titre" Width="200" DisplayMemberBinding="{Binding Titre}" />
+                    <GridViewColumn Header="Auteur" Width="150" DisplayMemberBinding="{Binding Auteur}" />
+                    <GridViewColumn Header="Editeur" Width="175" DisplayMemberBinding="{Binding Editeur}" />
                     <GridViewColumn Header="Genre" Width="155" DisplayMemberBinding="{Binding Genre}" />
                     <GridViewColumn Header="Date d'ajout" Width="155" DisplayMemberBinding="{Binding DateAjout}" />
                     <GridViewColumn Header="Disponibilité" Width="90" DisplayMemberBinding="{Binding Disponibilite}" />
+                    
                 </GridView>
             </ListView.View>
         </ListView>
