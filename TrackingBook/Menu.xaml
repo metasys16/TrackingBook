@@ -11,7 +11,7 @@
     <StackPanel Orientation="Horizontal">
         <WrapPanel Width="500" Margin="15,0">
             <Button Name="btnList" Width="50" Height="50" Margin="5,0">
-                <Image Source="Resources/List.ico"/>
+                <Image Width="20" Height="20" Source="Resources/List.ico"/>
             </Button>
             <Button Name="btnAjout" Width="50" Height="50" Margin="5,0">
                 <Image Source="Resources/Add.png"/>
@@ -23,7 +23,7 @@
                 <Image Source="Resources/Retour.png"/>
             </Button>
         </WrapPanel>
-        <WrapPanel Width="300" Margin="15,0">
+        <WrapPanel Width="225" Margin="15,0">
             <Button Name="btnTriCroissant" Width="50" Height="50" Margin="5,0">
                 <Image Source="Resources/TriCroissant.png"/>
             </Button>
@@ -31,13 +31,30 @@
                 <Image Source="Resources/TriDeCroissant.png"/>
             </Button>
         </WrapPanel>
-        <WrapPanel Width="500" Margin="15,0">
-            <TextBlock FontWeight="Bold" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Center">Trier Par :</TextBlock>
-            <Button Name="btnTri"  Width="30" Height="30" Margin="5,0">
-                <Image Source="Resources/Trier.png"/>
-            </Button>
-            <TextBox Name="textSearch" Height="30" Width="150" Margin="30,0,0,0">Rechercher</TextBox>
-            <Button Name="btnSearch" Width="50" Height="50" Margin="5,0">
+        <WrapPanel Width="280" Margin="10,10,0,0">
+            <WrapPanel Height="30">
+
+                <ComboBox HorizontalAlignment="Center"  Height="30" VerticalAlignment="Center" Margin="10,0,0,0" >
+                    <ComboBoxItem Content="Auteur1"/>
+                    <ComboBoxItem IsSelected="True" Content="Titre"/>
+                    <ComboBoxItem Content="Saga"/>
+                    <ComboBoxItem Content="Genre"/>
+                    <ComboBoxItem Content="Editeur"/>
+                    <ComboBoxItem Content="ISBN"/>
+                    <ComboBoxItem Content="Date d'ajout"/>
+                </ComboBox>
+            </WrapPanel>
+            <WrapPanel  Margin="20,0,0,0">
+                <ComboBox Height="30">
+                    <ComboBoxItem Content="Disponible"/>
+                    <ComboBoxItem IsSelected="True" Content="Non disponible"/>
+                    <ComboBoxItem Content="Tous"/>
+                </ComboBox>
+            </WrapPanel>
+          </WrapPanel>
+        <WrapPanel>
+        <TextBox x:Name="textSearch" Height="30" Width="150" Margin="70,0,0,0" Text="Rechercher"/>
+            <Button x:Name="btnSearch" Width="50" Height="50" Margin="5,0">
                 <Image Source="Resources/Find.ico"/>
             </Button>
         </WrapPanel>
