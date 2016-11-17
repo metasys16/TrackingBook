@@ -13,7 +13,7 @@
             <Button Name="btnList" Width="50" Height="50" Margin="5,0">
                 <Image Width="20" Height="20" Source="Resources/List.ico"/>
             </Button>
-            <Button Name="btnAjout" Width="50" Height="50" Margin="5,0">
+            <Button Name="btnAjout" Width="50" Height="50" Margin="5,0" Click="btnAjout_Click">
                 <Image Source="Resources/Add.png"/>
             </Button>
             <Button Name="btnPreter" Width="50" Height="50" Margin="5,0">

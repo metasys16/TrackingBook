@@ -43,7 +43,19 @@
         <StackPanel Orientation="Horizontal">
             <StackPanel  Margin="10" Width="440">
                 <StackPanel Orientation="Horizontal" Margin="5">
-                    <TextBox x:Name="titre" Height="27" Width="306" Text="Titre du Livre"/>
+                    <Grid Background="White" HorizontalAlignment="Right" VerticalAlignment="Top"  >
+                        <!-- overlay with hint text -->
+                        <TextBlock Margin="5,2" MinWidth="50" Text="Titre du Livre" Foreground="LightSteelBlue">
+                            <TextBlock.Visibility>
+                                <MultiBinding Converter="{StaticResource TextInputToVisibilityConverter}">
+                                    <Binding ElementName="txtSearchBox" Path="Text.IsEmpty" />
+                                    <Binding ElementName="txtSearchBox" Path="IsFocused" />
+                                </MultiBinding>
+                            </TextBlock.Visibility>
+                        </TextBlock>
+                        <!-- enter term here -->
+                        <TextBox MinWidth="50" x:Name="titre" Height="27" Width="306" Background="Transparent" />
+                    </Grid>
                     <Button Content="?" Width="27">
                         <Button.ToolTip>
                             <ToolTip>

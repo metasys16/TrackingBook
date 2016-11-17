@@ -92,6 +92,7 @@
     <Compile Include="EnteteLivre.xaml.cs">
       <DependentUpon>EnteteLivre.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TextInputToVisibilityConverter.cs" />
     <Page Include="ajoutLivre.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
