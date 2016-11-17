@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Modele
+namespace TrackingBook.Modele
 {
-    class Auteur
+    public class Auteur
     {
         private String nom;
         private String prenom;

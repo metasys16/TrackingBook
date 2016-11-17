@@ -4,14 +4,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TrackingBook
+namespace TrackingBook.Modele
 {
-    class Oeuvre
+    public class Oeuvre
     {
+        private List<Auteur> auteurs;
+        private List<Genre> genres;
         private String titre;
         private String resume;
         private int isbn10;
         private int isbn13;
+
+
+        public List<Auteur> Auteurs
+        {
+            get { return auteurs; }
+            set { auteurs = value; }
+        }
+
+        public List<Genre> Genres
+        {
+            get { return genres; }
+            set { genres = value; }
+        }
 
         public String Titre
         {
@@ -19,7 +34,7 @@ namespace TrackingBook
             set { titre = value; }
         }
 
-      
+
 
         public String Resume
         {

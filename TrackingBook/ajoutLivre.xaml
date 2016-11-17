@@ -48,8 +48,8 @@
                         <TextBlock Margin="5,2" MinWidth="50" Text="Titre du Livre" Foreground="LightSteelBlue">
                             <TextBlock.Visibility>
                                 <MultiBinding Converter="{StaticResource TextInputToVisibilityConverter}">
-                                    <Binding ElementName="txtSearchBox" Path="Text.IsEmpty" />
-                                    <Binding ElementName="txtSearchBox" Path="IsFocused" />
+                                    <Binding ElementName="titre" Path="Text.IsEmpty" />
+                                    <Binding ElementName="titre" Path="IsFocused" />
                                 </MultiBinding>
                             </TextBlock.Visibility>
                         </TextBlock>

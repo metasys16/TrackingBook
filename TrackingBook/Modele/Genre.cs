@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TrackingBook
+namespace TrackingBook.Modele
 {
-    class Genre
+    public class Genre
     {
         private String genre;
 

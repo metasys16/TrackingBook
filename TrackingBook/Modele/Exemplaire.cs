@@ -4,16 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TrackingBook
+namespace TrackingBook.Modele
 {
-    class Exemplaire
+    public class Exemplaire
     {
+        private Oeuvre oeuvre;
         private string photo;
         private DateTime dateAjout;
         private Char etat;
         private bool disponibilite;
 
-
+        public Oeuvre Oeuvre
+        {
+            get { return oeuvre; }
+            set { oeuvre = value; }
+        }
         public string Photo
         {
             get { return photo; }
