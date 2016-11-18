@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Modele;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,18 +9,28 @@ namespace TrackingBook.Modele
 {
     public class Exemplaire
     {
+      
+        private string photo;
+        private DateTime dateAjout;
+        private String etat;
+        private bool disponibilite;
+
         private Oeuvre oeuvre;
         private Editeur editeur;
-        private string photo;
-        public DateTime dateAjout;
-        private Char etat;
-        public bool disponibilite;
+        private Auteur auteur;
 
         public Oeuvre Oeuvre
         {
             get { return oeuvre; }
             set { oeuvre = value; }
         }
+
+        public Auteur Auteur
+        {
+            get { return auteur; }
+            set { auteur = value; }
+        }
+       
         public Editeur Editeur
         {
             get { return editeur; }
@@ -38,7 +49,7 @@ namespace TrackingBook.Modele
         }
 
 
-        public Char Etat
+        public string Etat
         {
             get { return etat; }
             set { etat = value; }
@@ -57,8 +68,5 @@ namespace TrackingBook.Modele
 
             }
         }
-
-
-
     }
 }
