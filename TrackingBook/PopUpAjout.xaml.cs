@@ -17,16 +17,27 @@ namespace TrackingBook
     /// <summary>
     /// Logique d'interaction pour Window2.xaml
     /// </summary>
-    public partial class PopUp : Window
+    public partial class PopUpAjout : Page
     {
-        public PopUp()
+        public PopUpAjout()
         {
             InitializeComponent();
         }
 
+        private void btnAnnuler_Click(object sender, RoutedEventArgs e)
+        {
+            (this.Parent as Window).Close();
+        }
+
         private void btnMessageBoxWithTitle_Click(object sender, RoutedEventArgs e)
         {
+            
+        }
 
+        private void btnOk_Click(object sender, RoutedEventArgs e)
+        {
+            //enregistrement
+            (this.Parent as Window).Close();
         }
     }
 }

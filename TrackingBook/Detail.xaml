@@ -35,7 +35,7 @@
             <TextBlock Name="Commentaire" Height="150">Commentaires :</TextBlock>
         </StackPanel>
         <StackPanel>
-            <Button Width="50"></Button>
+            <Button Name="Utiliser" Width="70" Height="25" Click="btnUtiliser_Click"></Button>
         </StackPanel>
     </StackPanel>
 </Page>

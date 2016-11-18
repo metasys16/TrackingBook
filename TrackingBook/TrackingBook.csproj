@@ -57,14 +57,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AccueilPage.xaml.cs">
+      <DependentUpon>AccueilPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AjoutPage.xaml.cs">
+      <DependentUpon>AjoutPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Footer.xaml.cs">
       <DependentUpon>Footer.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Menu.xaml.cs">
-      <DependentUpon>Menu.xaml</DependentUpon>
     </Compile>
     <Compile Include="Modele\Auteur.cs" />
     <Compile Include="Modele\Commentaire.cs" />
@@ -75,8 +78,14 @@
     <Compile Include="Modele\MoyenContact.cs" />
     <Compile Include="Modele\Oeuvre.cs" />
     <Compile Include="Modele\Pret.cs" />
-    <Compile Include="PopUp.xaml.cs">
-      <DependentUpon>PopUp.xaml</DependentUpon>
+    <Compile Include="PopUpRetour.xaml.cs">
+      <DependentUpon>PopUpRetour.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PopUpAjout.xaml.cs">
+      <DependentUpon>PopUpAjout.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PopUpPret.xaml.cs">
+      <DependentUpon>PopUpPret.xaml</DependentUpon>
     </Compile>
     <Compile Include="PretLivre.xaml.cs">
       <DependentUpon>PretLivre.xaml</DependentUpon>
@@ -92,9 +101,17 @@
     <Compile Include="EnteteLivre.xaml.cs">
       <DependentUpon>EnteteLivre.xaml</DependentUpon>
     </Compile>
+    <Page Include="AccueilPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ajoutLivre.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="AjoutPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Detail.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -108,11 +125,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Menu.xaml">
+    <Page Include="PopUpRetour.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="PopUp.xaml">
+    <Page Include="PopUpAjout.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PopUpPret.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

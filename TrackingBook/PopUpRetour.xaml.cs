@@ -10,34 +10,33 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace TrackingBook
 {
     /// <summary>
-    /// Logique d'interaction pour retourLivre.xaml
+    /// Logique d'interaction pour Window2.xaml
     /// </summary>
-    public partial class retourLivre : Page
+    public partial class PopUpRetour : Page
     {
-        public retourLivre()
+        public PopUpRetour()
         {
             InitializeComponent();
         }
 
-        private void btnConfirm_Click(object sender, RoutedEventArgs e)
+        private void btnMessageBoxWithTitle_Click(object sender, RoutedEventArgs e)
         {
-            PopUpRetour popUp = new PopUpRetour();
-            Window winpop = new Window();
-            winpop.Content = popUp;
-            winpop.SizeToContent = SizeToContent.WidthAndHeight;
-            winpop.ResizeMode = System.Windows.ResizeMode.NoResize;
-            winpop.WindowStartupLocation = WindowStartupLocation.CenterScreen;
-            winpop.ShowDialog();
+            
         }
 
         private void btnAnnuler_Click(object sender, RoutedEventArgs e)
         {
+            (this.Parent as Window).Close();
+        }
+
+        private void btnOk_Click(object sender, RoutedEventArgs e)
+        {
+            //enregistrement
             (this.Parent as Window).Close();
         }
     }

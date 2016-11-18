@@ -30,8 +30,8 @@
         </StackPanel>
         <TextBox Height="172" Width="770" Margin="22,0,23,0" Text="Commentaire"/>
         <StackPanel Orientation="Horizontal" Margin="20,20,20,20" HorizontalAlignment="Right">
-            <Button Content="Confirmer" Height="30" Width="68"/>
-            <Button Content="Annuler" Height="30" Width="68"/>
+            <Button Content="Confirmer" Height="30" Width="68" Click="btnConfirm_Click"/>
+            <Button Content="Annuler" Height="30" Width="68" Click="btnAnnuler_Click"/>
         </StackPanel>
     </StackPanel>
 </Page>

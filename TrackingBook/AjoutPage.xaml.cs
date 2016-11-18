@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace TrackingBook
 {
     /// <summary>
-    /// Interaction logic for Page1.xaml
+    /// Logique d'interaction pour AjoutPage.xaml
     /// </summary>
-    public partial class Page1 : Page
+    public partial class AjoutPage : Page
     {
-        public Page1()
+        public AjoutPage()
         {
             InitializeComponent();
         }

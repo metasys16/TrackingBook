@@ -16,18 +16,13 @@ using System.Windows.Shapes;
 namespace TrackingBook
 {
     /// <summary>
-    /// Interaction logic for Detail.xaml
+    /// Logique d'interaction pour AccueilPage.xaml
     /// </summary>
-    public partial class Detail : Page
+    public partial class AccueilPage : Page
     {
-        public Detail()
+        public AccueilPage()
         {
             InitializeComponent();
-        }
-
-        private void btnUtiliser_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

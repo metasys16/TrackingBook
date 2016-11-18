@@ -29,5 +29,23 @@ namespace TrackingBook
         {
 
         }
+
+        private void BoutonAnnuler_Click(object sender, RoutedEventArgs e)
+        {
+            (this.Parent as Window).Close();
+            
+        }
+
+        private void BoutonValider_Click(object sender, RoutedEventArgs e)
+        {
+            PopUpPret popUp = new PopUpPret();
+            Window winpop = new Window();
+            winpop.Content = popUp;
+            winpop.SizeToContent = SizeToContent.WidthAndHeight;
+            winpop.ResizeMode = System.Windows.ResizeMode.NoResize;
+            winpop.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            winpop.ShowDialog();
+
+        }
     }
 }

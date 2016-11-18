@@ -94,12 +94,11 @@
         <StackPanel Margin="50,30,50,10">
             <WrapPanel HorizontalAlignment="Center">
                 <StackPanel>
-                    <Button Name="BoutonAnnuler"
-                        Margin="0,0,10,0">Annuler
+                    <Button Name="BoutonAnnuler" Margin="0,0,10,0" Click="BoutonAnnuler_Click">Annuler
                     </Button>
                 </StackPanel>
                 <StackPanel>
-                    <Button Name="BoutonValider"
+                    <Button Name="BoutonValider" Click="BoutonValider_Click"
                        >Valider
                     </Button>
                 </StackPanel>
