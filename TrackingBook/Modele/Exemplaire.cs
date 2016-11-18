@@ -10,9 +10,16 @@ namespace TrackingBook
     {
         private string photo;
         private DateTime dateAjout;
-        private Char etat;
+        private String etat;
         private bool disponibilite;
 
+        private Editeur editeur;
+
+        public Editeur Editeur
+        {
+            get { return editeur; }
+            set { editeur = value; }
+        }
 
         public string Photo
         {
@@ -27,7 +34,7 @@ namespace TrackingBook
         }
     
 
-        public Char Etat
+        public string Etat
         {
             get { return etat; }
             set { etat = value; }
@@ -40,7 +47,6 @@ namespace TrackingBook
             get { return disponibilite; }
             set { disponibilite = value; }
         }
-
 
     }
 }
