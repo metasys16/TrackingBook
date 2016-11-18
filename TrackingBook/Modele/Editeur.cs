@@ -7,11 +7,9 @@ using System.Threading.Tasks;
 
 namespace TrackingBook.Modele
 {
-<<<<<<< HEAD
-   public class Editeur
-=======
-    class Editeur : INotifyPropertyChanged
->>>>>>> master
+
+    public class Editeur : INotifyPropertyChanged
+
     {
 
         private String nom;

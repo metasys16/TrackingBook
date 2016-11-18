@@ -7,11 +7,9 @@ using System.Threading.Tasks;
 
 namespace TrackingBook.Modele
 {
-<<<<<<< HEAD
-    public class Oeuvre
-=======
-    class Oeuvre : INotifyPropertyChanged
->>>>>>> master
+
+    public class Oeuvre : INotifyPropertyChanged
+
     {
         private List<Auteur> auteurs = new List<Auteur>();
         private List<Genre> genres = new List<Genre>();
@@ -46,11 +44,6 @@ namespace TrackingBook.Modele
             }
         }
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> master
         public String Resume
         {
             get { return resume; }
@@ -76,9 +69,6 @@ namespace TrackingBook.Modele
             set { isbn13 = value; }
         }
 
-<<<<<<< HEAD
-        
-=======
         public event PropertyChangedEventHandler PropertyChanged;
         public void NotifyPropertyChanged(string titreLivre)
         {
@@ -87,6 +77,5 @@ namespace TrackingBook.Modele
                 this.PropertyChanged(this, new PropertyChangedEventArgs(titreLivre));
             }
         }
->>>>>>> master
     }
 }

@@ -1,4 +1,4 @@
-﻿using Modele;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,9 +11,9 @@ namespace TrackingBook.Modele
     {
       
         private string photo;
-        private DateTime dateAjout;
+        public DateTime dateAjout;
         private String etat;
-        private bool disponibilite;
+       public bool disponibilite;
 
         private Oeuvre oeuvre;
         private Editeur editeur;
