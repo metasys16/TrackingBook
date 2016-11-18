@@ -54,7 +54,7 @@
                             </TextBlock.Visibility>
                         </TextBlock>
                         <!-- enter term here -->
-                        <TextBox MinWidth="50" x:Name="titre" Height="27" Width="306" Background="Transparent" />
+                        <TextBox MinWidth="50" x:Name="titre" Height="27" Width="306" Background="Transparent" VerticalAlignment="Top" />
                     </Grid>
                     <Button Content="?" Width="27">
                         <Button.ToolTip>
@@ -73,8 +73,8 @@
                         <Button.ToolTip>
                             <ToolTip>
                                 <StackPanel>
-                                    <TextBlock FontWeight="Bold">Editeur</TextBlock>
-                                    <TextBlock>Personne qui à publier le livre</TextBlock>
+                                    <TextBlock FontWeight="Bold"><Run Text="Editeur"/></TextBlock>
+                                    <TextBlock><Run Text="Personne qui à publier le livre"/></TextBlock>
                                 </StackPanel>
                             </ToolTip>
                         </Button.ToolTip>
@@ -96,7 +96,7 @@
                     </Button>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="5">
-                    <TextBox x:Name="sage" Height="27" Width="306" Text="Titre de la saga"/>
+                    <TextBox x:Name="saga" Height="27" Width="306" Text="Titre de la saga"/>
                     <Button Content="?" Width="27"/>
                 </StackPanel>
             </StackPanel>

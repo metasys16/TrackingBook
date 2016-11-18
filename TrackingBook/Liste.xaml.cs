@@ -114,6 +114,8 @@ namespace TrackingBook
                 // Récupérer l'éditeur
                 this.Editeur = exemplaire.Editeur.Nom;
             }
+
+
             public string Titre { get; set; }
 
             public string Auteur { get; set; }

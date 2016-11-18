@@ -58,6 +58,6 @@ namespace TrackingBook.Modele
             set { isbn13 = value; }
         }
 
-
+        
     }
 }
