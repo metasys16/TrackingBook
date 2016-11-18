@@ -25,52 +25,52 @@ namespace TrackingBook
         {
             InitializeComponent();
 
-            // test
-            Exemplaire ex = new Exemplaire();
-            ex.Disponibilite = true;
-            ex.DateAjout = new DateTime(2015, 6, 5);
+            //// test
+            //Exemplaire ex = new Exemplaire();
+            //ex.Disponibilite = true;
+            //ex.DateAjout = new DateTime(2015, 6, 5);
 
-            Editeur editeur = new Editeur();
-            editeur.Nom = "Gallimard";
-            ex.Editeur = editeur;
-       
-          
-
-            Oeuvre oeuvre = new Oeuvre();
-            oeuvre.Titre = "L'étranger";
-            ex.Oeuvre = oeuvre;
-
-            Auteur auteur = new Auteur();
-            auteur.Nom = "Camus";
-            auteur.PrenomAuteur = "Albert";
-            oeuvre.Auteurs.Add(auteur);
-
-      
-            Genre genre1 = new Genre();
-            genre1.Nom = "Meutre";
-            oeuvre.Genres.Add(genre1);
-
-
-            Genre genre2= new Genre();
-            genre2.Nom = "Roman";
-            oeuvre.Genres.Add(genre2);
+            //Editeur editeur = new Editeur();
+            //editeur.Nom = "Gallimard";
+            //ex.Editeur = editeur;
 
 
 
+            //Oeuvre oeuvre = new Oeuvre();
+            //oeuvre.Titre = "L'étranger";
+            //ex.Oeuvre = oeuvre;
 
+            //Auteur auteur = new Auteur();
+            //auteur.Nom = "Camus";
+            //auteur.PrenomAuteur = "Albert";
+            //oeuvre.Auteurs.Add(auteur);
+
+
+            //Genre genre1 = new Genre();
+            //genre1.Nom = "Meutre";
+            //oeuvre.Genres.Add(genre1);
+
+
+            //Genre genre2= new Genre();
+            //genre2.Nom = "Roman";
+            //oeuvre.Genres.Add(genre2);
             // fin test
 
+
+
+            
             List<Livre> items = new List<Livre>();
-            items.Add(new Livre(ex));
+            items.Add(new Livre());
             listeLivres.ItemsSource = items;
 
         }
 
         private class Livre
         {
-           /// public Livre() { }
+          
 
             public Livre(Exemplaire exemplaire) {
+                
                 // Récupérer le titre de l'exmplaire il y un titre unique pour une oeuvre mais plusieurs exemplaires peuvent exister pour une oeuvre
                 this.Titre = exemplaire.Oeuvre.Titre;
 
@@ -79,7 +79,7 @@ namespace TrackingBook
                 StringBuilder sb = new StringBuilder();
                 foreach (Auteur auteur in listeauteurs)
                 {
-                    sb.Append(auteur.PrenomAuteur).Append("").Append(auteur.Nom);
+                    sb.Append(auteur.Prenom).Append("").Append(auteur.Nom);
                 }
                 this.Auteur = sb.ToString();
 

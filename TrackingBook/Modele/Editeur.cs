@@ -1,12 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace TrackingBook.Modele
 {
+<<<<<<< HEAD
    public class Editeur
+=======
+    class Editeur : INotifyPropertyChanged
+>>>>>>> master
     {
 
         private String nom;
@@ -14,7 +19,23 @@ namespace TrackingBook.Modele
         public String Nom
         {
             get { return nom; }
-            set { nom = value; }
+            set
+            {
+                if (nom != value)
+                {
+                    nom = value;
+                    this.NotifyPropertyChanged("Editeur");
+                }
+            }
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        public void NotifyPropertyChanged(string editeur)
+        {
+            if (this.PropertyChanged != null)
+            {
+                this.PropertyChanged(this, new PropertyChangedEventArgs(editeur));
+            }
         }
 
     }

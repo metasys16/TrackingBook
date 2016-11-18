@@ -1,19 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace TrackingBook.Modele
 {
+<<<<<<< HEAD
     public class Oeuvre
+=======
+    class Oeuvre : INotifyPropertyChanged
+>>>>>>> master
     {
         private List<Auteur> auteurs = new List<Auteur>();
         private List<Genre> genres = new List<Genre>();
         private String titre;
         private String resume;
-        private int isbn10;
-        private int isbn13;
+        private String isbn10;
+        private String isbn13;
 
 
         public List<Auteur> Auteurs
@@ -31,33 +36,57 @@ namespace TrackingBook.Modele
         public String Titre
         {
             get { return titre; }
-            set { titre = value; }
+            set
+            {
+                if (titre != value)
+                {
+                    titre = value;
+                    this.NotifyPropertyChanged("Titre");
+                }
+            }
         }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> master
         public String Resume
         {
             get { return resume; }
-            set { resume = value; }
+            set
+            {
+                if (resume != value)
+                {
+                    resume = value;
+                    this.NotifyPropertyChanged("Resume");
+                }
+            }
         }
 
-        
-
-        public int ISBN10
+        public String ISBN10
         {
             get { return isbn10; }
             set { isbn10 = value; }
         }
 
-       
-
-        public int ISBN13
+        public String ISBN13
         {
             get { return isbn13; }
             set { isbn13 = value; }
         }
 
+<<<<<<< HEAD
         
+=======
+        public event PropertyChangedEventHandler PropertyChanged;
+        public void NotifyPropertyChanged(string titreLivre)
+        {
+            if (this.PropertyChanged != null)
+            {
+                this.PropertyChanged(this, new PropertyChangedEventArgs(titreLivre));
+            }
+        }
+>>>>>>> master
     }
 }
