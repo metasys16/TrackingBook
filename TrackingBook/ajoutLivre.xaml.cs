@@ -27,6 +27,7 @@ namespace TrackingBook
         public AjoutLivre()
         {
             InitializeComponent();
+            this.DataContext = this;
             
         }
         private void btnAjoutLivre_Click(object sender, RoutedEventArgs e)
@@ -53,6 +54,8 @@ namespace TrackingBook
             exemplaire.Disponibilite = true; // Il est disponible au pret
 
             exemplaire.Editeur = editeur;
+            exemplaire.Auteur = auteur;
+            exemplaire.Oeuvre = oeuvre;
 
             //exemplaire.Editeur.Nom;
             this.DataContext = exemplaire;

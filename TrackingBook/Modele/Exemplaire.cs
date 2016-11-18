@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Modele;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,7 +15,20 @@ namespace TrackingBook
         private bool disponibilite;
 
         private Editeur editeur;
+        private Auteur auteur;
+        private Oeuvre oeuvre;
 
+        public Oeuvre Oeuvre
+        {
+            get { return oeuvre; }
+            set { oeuvre = value; }
+        }
+
+        public Auteur Auteur
+        {
+            get { return auteur; }
+            set { auteur = value; }
+        }
         public Editeur Editeur
         {
             get { return editeur; }
