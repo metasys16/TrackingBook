@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Modele;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,9 +11,29 @@ namespace TrackingBook
     {
         private string photo;
         private DateTime dateAjout;
-        private Char etat;
+        private String etat;
         private bool disponibilite;
 
+        private Editeur editeur;
+        private Auteur auteur;
+        private Oeuvre oeuvre;
+
+        public Oeuvre Oeuvre
+        {
+            get { return oeuvre; }
+            set { oeuvre = value; }
+        }
+
+        public Auteur Auteur
+        {
+            get { return auteur; }
+            set { auteur = value; }
+        }
+        public Editeur Editeur
+        {
+            get { return editeur; }
+            set { editeur = value; }
+        }
 
         public string Photo
         {
@@ -27,7 +48,7 @@ namespace TrackingBook
         }
     
 
-        public Char Etat
+        public string Etat
         {
             get { return etat; }
             set { etat = value; }
@@ -40,7 +61,6 @@ namespace TrackingBook
             get { return disponibilite; }
             set { disponibilite = value; }
         }
-
 
     }
 }

@@ -24,5 +24,16 @@ namespace TrackingBook
         {
             InitializeComponent();
         }
+
+        private void btnAjout_Click(object sender, RoutedEventArgs e)
+        {
+            AjoutLivre addBookWindow = new AjoutLivre();
+            Window win = new Window();
+            win.Content = addBookWindow;
+            win.SizeToContent = SizeToContent.WidthAndHeight;
+            win.ResizeMode = System.Windows.ResizeMode.NoResize;
+            win.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            win.ShowDialog();
+        }
     }
 }

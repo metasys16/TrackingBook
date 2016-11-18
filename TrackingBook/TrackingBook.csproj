@@ -105,6 +105,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Compile Include="TextInputToVisibilityConverter.cs" />
     <Page Include="ajoutLivre.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
